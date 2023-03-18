@@ -1,14 +1,16 @@
 import Foundation
 import SwiftUI
 
-struct PulsaDataView: View {
+public struct PulsaDataView: View {
     
     @State private var phoneNumber : String = ""
     @State private var showPhoneContacts = false
     @State private var showGridData = true
     @State private var showResultView = false
     
-    var body :some View{
+    init(){}
+    
+    public var body :some View{
         NavigationStack{
             VStack(alignment: .leading){
                 Text("Nomor Ponsel").font(.system(size: 14, design: .rounded)).foregroundColor(.black).padding(.horizontal, 16).padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
