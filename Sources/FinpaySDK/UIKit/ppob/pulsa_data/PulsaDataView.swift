@@ -8,7 +8,7 @@ public struct PulsaDataView: View {
     @State private var showGridData = true
     @State private var showResultView = false
     
-    init(){}
+    public init(){}
     
     public var body :some View{
         NavigationStack{
